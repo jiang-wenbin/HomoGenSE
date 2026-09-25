@@ -14,8 +14,8 @@ Usage (from the repo root):
     python tools/run_LibriSpeech_whisper.py
     python tools/run_LibriSpeech_whisper.py --data-root LibriSpeech \
         --transcript exp/LibriSpeech/txt/transcript.txt \
-        --whisper-dir exp/LibriSpeech_check/whisper \
-        --out exp/LibriSpeech_check/Whisper.xlsx
+        --whisper-dir exp/LibriSpeech/whisper \
+        --out exp/LibriSpeech/whisper.xlsx
 """
 
 import argparse
@@ -195,5 +195,5 @@ if __name__ == "__main__":
     parser.add_argument("--whisper-dir", default="exp/LibriSpeech/whisper",
                         help="checkpoint dir for the per-condition CSVs")
     parser.add_argument("--batch-size", type=int, default=64)
-    parser.add_argument("--out", default="exp/LibriSpeech/Whisper.xlsx")
+    parser.add_argument("--out", default="exp/LibriSpeech/whisper.xlsx")
     main(parser.parse_args())
