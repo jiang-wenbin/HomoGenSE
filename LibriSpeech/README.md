@@ -11,6 +11,6 @@ This directory contains speech samples used to evaluate the effect of speech enh
 | `HomoGenSE-DE/`, `HomoGenSE-NE/` | Enhanced outputs from the two HomoGenSE variants, grouped by SNR (`-5dB/`, `0dB/`, `5dB/`, `10dB/`, `15dB/`) |
 | `CDiffuSE/`, `CTFSE/`, `DCCRN/`, `FlowSE-Freq/`, `FlowSE-Vocos/`, `FullSubNet/`, `MP-SENet/`, `NHS-SE+/`, `NSNet2/`, `SGMSE+/`, `StoRM/`, `TF-GridNet/` | Comparison-system outputs, grouped by the same SNR directory names |
 
-Each SNR directory contains 500 files. All noisy and enhanced output folders use the same plain SNR names; specifically, the zero-SNR directory is named `0dB` (not `+0dB`). Within a condition, the utterance basename identifies the LibriSpeech recording and can be matched across the clean, noisy, and enhanced directories. For example, `2830-3980-0032.flac` is the same utterance across conditions.
+Each SNR directory contains 500 files. All noisy and enhanced output folders use the same SNR names, e.g., `-5dB`, `0dB`, `5dB`, `10dB`, and `15dB`. Within each condition, the utterance basename identifies the corresponding LibriSpeech recording and can be matched across the clean, noisy, and enhanced directories. For example, `2830-3980-0032.flac` refers to the same utterance across all conditions.
 
-The paper evaluates these samples with Whisper Tiny, Base, and Small, reporting word error rates at each SNR. It uses the official LibriSpeech transcripts as recognition references.
+The paper evaluates these samples using Whisper Tiny, Base, and Small, reporting word error rates at each SNR. The official LibriSpeech transcripts are used as recognition references.
