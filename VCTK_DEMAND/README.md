@@ -8,8 +8,8 @@ Each top-level subdirectory contains FLAC audio. For the flat directories, files
 
 | Directory | Contents |
 | --- | --- |
-| `clean/` | Clean reference speech (824 files) |
-| `noisy/` | Noisy input speech (824 files) |
+| `Clean/` | Clean reference speech (824 files) |
+| `Noisy/` | Noisy input speech (824 files) |
 | `HomoGenSE-DE/`, `HomoGenSE-NE/` | HomoGenSE outputs; DE and NE variants (824 files each) |
 | `HomoGenSE-DE_NFE2/`, `HomoGenSE-DE_NFE5/` | HomoGenSE-DE outputs using 2 and 5 function evaluations (824 files each) |
 | `CDiffuSE/`, `CTFSE/`, `DCCRN/`, `FlowSE-Freq/`, `FlowSE-Vocos/`, `MP-SENet/`, `NHS-SE+/`, `OMLSA/`, `SGMSE+/`, `StoRM/`, `TF-GridNet/` | Outputs from comparison systems (824 files each) |
