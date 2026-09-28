@@ -8,10 +8,10 @@ Each top-level subdirectory contains FLAC audio. For the flat directories, files
 
 | Directory | Contents |
 | --- | --- |
-| `Clean/` | Clean reference speech (824 files) |
-| `Noisy/` | Noisy input speech (824 files) |
-| `HomoGenSE-DE/`, `HomoGenSE-NE/` | HomoGenSE outputs; DE and NE variants (824 files each) |
-| `HomoGenSE-DE_NFE2/`, `HomoGenSE-DE_NFE5/` | HomoGenSE-DE outputs using 2 and 5 function evaluations (824 files each) |
-| `CDiffuSE/`, `CTFSE/`, `DCCRN/`, `FlowSE-Freq/`, `FlowSE-Vocos/`, `MP-SENet/`, `NHS-SE+/`, `OMLSA/`, `SGMSE+/`, `StoRM/`, `TF-GridNet/` | Outputs from comparison systems (824 files each) |
+| `Clean/` | Clean reference speech |
+| `Noisy/` | Noisy input speech |
+| `HomoGenSE-DE/`, `HomoGenSE-NE/` | HomoGenSE outputs; DE and NE variants |
+| `HomoGenSE-DE_NFE2/`, `HomoGenSE-DE_NFE5/` | HomoGenSE-DE outputs using 2 and 5 function evaluations |
+| `CDiffuSE/`, `CTFSE/`, `DCCRN/`, `FlowSE-Freq/`, `FlowSE-Vocos/`, `MP-SENet/`, `NHS-SE+/`, `OMLSA/`, `SGMSE+/`, `StoRM/`, `TF-GridNet/` | Outputs from comparison systems |
 
 The filenames follow the VCTK speaker/utterance convention (for example, `p232_258.flac`). Match samples by basename when comparing systems. The HomoGenSE NFE variants allow comparison of different inference budgets; the paper uses NFE = 1 by default and also reports NFE = 2 and 5.
